@@ -56,7 +56,7 @@
   }
 
   body {
-    @apply bg-cream text-navy dark:bg-navy dark:text-cream font-inter antialiased;
+    @apply bg-cream text-navy dark:bg-darknavy dark:text-cream font-inter antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -70,4 +70,45 @@
 
 .section-padding {
   @apply py-20 md:py-32;
+}
+
+/* Seções específicas no modo escuro */
+.dark .bg-white {
+  @apply bg-darkgray;
+}
+
+.dark .bg-cream {
+  @apply bg-darknavy;
+}
+
+/* Ajustes de cards no modo escuro */
+.dark .bg-white/50 {
+  @apply bg-darkgray/50;
+}
+
+/* Ajustes de texto no modo escuro */
+.dark .text-navy {
+  @apply text-cream;
+}
+
+.dark .text-softgray {
+  @apply text-gray-400;
+}
+
+/* Ajustes de bordas no modo escuro */
+.dark .border-gray-200 {
+  @apply border-gray-700;
+}
+
+.dark .border-gray-300 {
+  @apply border-gray-600;
+}
+
+/* Ajustes de hover no modo escuro */
+.dark .hover\:bg-navy\/5:hover {
+  @apply hover:bg-cream/5;
+}
+
+.dark .hover\:text-softgray:hover {
+  @apply hover:text-darkaccent;
 }
