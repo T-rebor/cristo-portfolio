@@ -1,19 +1,21 @@
 const Hero = () => {
   return (
-    <section id="inicio" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-cream">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-navy mb-6">
+    <section id="inicio" className="min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-cream to-white">
+      <div className="container mx-auto px-4 text-center animate-fade-in">
+        <h1 className="text-4xl md:text-7xl font-playfair font-bold text-navy mb-8 leading-tight">
           Soli Deo Gloria
         </h1>
-        <p className="text-xl md:text-2xl text-softgray font-playfair italic mb-8">
-          "Porque dele, e por meio dele, e para ele são todas as coisas. A ele, pois, a glória eternamente. Amém!"
-          <br />
-          <span className="text-base">Romanos 11:36</span>
+        <p className="text-xl md:text-2xl text-softgray font-playfair italic mb-12 max-w-3xl mx-auto">
+          "Porque dele, e por meio dele, e para ele são todas as coisas. 
+          A ele, pois, a glória eternamente. Amém!"
+          <span className="block text-base mt-4">Romanos 11:36</span>
         </p>
-        <p className="max-w-2xl mx-auto text-lg text-navy">
-          Bem-vindo ao Cristocentrismo, um ministério dedicado à proclamação das verdades eternas
-          da fé Batista Reformada através de recursos teológicos cuidadosamente selecionados.
-        </p>
+        <div className="max-w-2xl mx-auto text-lg text-navy/80 bg-white/50 backdrop-blur-sm p-8 rounded-lg shadow-sm">
+          <p>
+            Bem-vindo ao Cristocentrismo, um ministério dedicado à proclamação das verdades eternas
+            da fé Batista Reformada através de recursos teológicos cuidadosamente selecionados.
+          </p>
+        </div>
       </div>
     </section>
   );

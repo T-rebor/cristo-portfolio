@@ -14,10 +14,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 bg-cream/80 backdrop-blur-md z-50 border-b border-navy/5">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-2xl font-playfair font-bold text-navy">
+        <div className="flex items-center justify-between h-20">
+          <a 
+            href="#" 
+            className="text-2xl font-playfair font-bold text-navy hover:text-accent transition-colors duration-300"
+          >
             Cristocentrismo
           </a>
 
@@ -27,7 +30,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-navy hover:text-softgray transition-colors duration-200"
+                className="text-navy/80 hover:text-accent transition-colors duration-300 text-sm tracking-wide"
               >
                 {item.label}
               </a>
@@ -50,12 +53,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-200">
+          <nav className="md:hidden py-6 border-t border-navy/5 bg-cream/95 backdrop-blur-md animate-fade-in">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-navy hover:text-softgray transition-colors duration-200"
+                className="block py-3 text-navy/80 hover:text-accent transition-colors duration-300 text-sm tracking-wide"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
