@@ -10,7 +10,7 @@ const Hero = () => {
           A ele, pois, a glória eternamente. Amém!"
           <span className="block text-base mt-4">Romanos 11:36</span>
         </p>
-        <div className="max-w-2xl mx-auto text-lg text-navy/80 bg-white/50 backdrop-blur-sm p-8 rounded-lg shadow-sm">
+        <div className="max-w-2xl mx-auto text-lg text-navy/80 bg-white/50 backdrop-blur-sm p-8 rounded-lg shadow-lg">
           <p>
             Bem-vindo ao Cristocentrismo, um ministério dedicado à proclamação das verdades eternas
             da fé Batista Reformada através de recursos teológicos cuidadosamente selecionados.

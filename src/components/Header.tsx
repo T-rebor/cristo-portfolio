@@ -14,23 +14,23 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-cream/80 backdrop-blur-md z-50 border-b border-navy/5">
+    <header className="fixed top-0 left-0 right-0 bg-cream/80 backdrop-blur-md z-50 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a 
             href="#" 
-            className="text-2xl font-playfair font-bold text-navy hover:text-accent transition-colors duration-300"
+            className="text-2xl font-playfair font-bold text-navy hover:text-accent transition-colors duration-300 animate-fade-in"
           >
             Cristocentrismo
           </a>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 animate-slide-in">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-navy/80 hover:text-accent transition-colors duration-300 text-sm tracking-wide"
+                className="text-navy/80 hover:text-accent transition-colors duration-300 text-sm tracking-wide hover:scale-105 transform"
               >
                 {item.label}
               </a>
@@ -44,9 +44,9 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-navy" />
+              <X className="h-6 w-6 text-navy animate-fade-in" />
             ) : (
-              <Menu className="h-6 w-6 text-navy" />
+              <Menu className="h-6 w-6 text-navy animate-fade-in" />
             )}
           </button>
         </div>

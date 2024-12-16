@@ -6,7 +6,7 @@ interface TranslationCardProps {
 
 const TranslationCard = ({ title, author, excerpt }: TranslationCardProps) => {
   return (
-    <div className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-navy/5">
+    <div className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-navy/5 animate-fade-in">
       <h3 className="text-xl font-playfair font-bold text-navy mb-3 group-hover:text-accent transition-colors duration-300">
         {title}
       </h3>
