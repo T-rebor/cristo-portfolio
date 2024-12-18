@@ -23,8 +23,8 @@ export default {
         cream: "#FDFBF7",
         softgray: "#94A3B8",
         accent: "#0EA5E9",
-        darknavy: "rgb(44, 24, 16)", // Marrom escuro
-        darkgray: "rgb(61, 38, 28)", // Marrom médio
+        darknavy: "#2C1810", // Marrom escuro
+        darkgray: "#3D261C", // Marrom médio
         darkaccent: "#D6BCFA",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
