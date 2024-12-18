@@ -6,6 +6,11 @@ import Blog from "@/components/Blog";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Newsletter from "@/components/Newsletter";
+import Resources from "@/components/Resources";
+import QuotesGallery from "@/components/QuotesGallery";
+import Timeline from "@/components/Timeline";
+import ReachMap from "@/components/ReachMap";
 
 const Index = () => {
   return (
@@ -13,9 +18,14 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <Newsletter />
         <Translations />
+        <Resources />
         <Videos />
+        <QuotesGallery />
+        <Timeline />
         <Blog />
+        <ReachMap />
         <About />
         <Contact />
       </main>
