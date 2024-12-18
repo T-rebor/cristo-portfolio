@@ -64,6 +64,69 @@
   }
 }
 
+/* Animações Globais */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Classes de Utilidade */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeitos de Hover */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.hover-glow {
+  @apply transition-all duration-300 hover:shadow-lg hover:brightness-105;
+}
+
+/* Classes Responsivas */
+.responsive-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.responsive-padding {
+  @apply py-8 md:py-12 lg:py-16;
+}
+
+/* Classes Base */
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -72,7 +135,7 @@
   @apply py-20 md:py-32;
 }
 
-/* Seções específicas no modo escuro */
+/* Ajustes do Modo Escuro */
 .dark .bg-white {
   @apply bg-darkgray;
 }
@@ -81,12 +144,10 @@
   @apply bg-darknavy;
 }
 
-/* Ajustes de cards no modo escuro */
 .dark .bg-white\/50 {
-  @apply bg-darkgray/50;
+  @apply bg-darkgray\/50;
 }
 
-/* Ajustes de texto no modo escuro */
 .dark .text-navy {
   @apply text-cream;
 }
@@ -95,7 +156,6 @@
   @apply text-gray-400;
 }
 
-/* Ajustes de bordas no modo escuro */
 .dark .border-gray-200 {
   @apply border-gray-700;
 }
@@ -104,9 +164,8 @@
   @apply border-gray-600;
 }
 
-/* Ajustes de hover no modo escuro */
 .dark .hover\:bg-navy\/5:hover {
-  @apply hover:bg-cream/5;
+  @apply hover:bg-cream\/5;
 }
 
 .dark .hover\:text-softgray:hover {
