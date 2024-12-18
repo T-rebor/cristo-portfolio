@@ -145,7 +145,7 @@
 }
 
 .dark .bg-white\/50 {
-  @apply bg-darkgray\/50;
+  @apply bg-opacity-50 bg-darkgray;
 }
 
 .dark .text-navy {
@@ -165,7 +165,7 @@
 }
 
 .dark .hover\:bg-navy\/5:hover {
-  @apply hover:bg-cream\/5;
+  @apply hover:bg-opacity-5 hover:bg-cream;
 }
 
 .dark .hover\:text-softgray:hover {
