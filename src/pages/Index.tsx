@@ -16,16 +16,22 @@ const Index = () => {
   return (
     <div className="scroll-smooth">
       <Header />
-      <main>
+      <main className="space-y-24">
         <Hero />
-        <Newsletter />
-        <Translations />
+        <div className="bg-white dark:bg-darkgray">
+          <Newsletter />
+          <Translations />
+        </div>
         <Resources />
-        <Videos />
-        <QuotesGallery />
+        <div className="bg-white dark:bg-darkgray">
+          <Videos />
+          <QuotesGallery />
+        </div>
         <Timeline />
-        <Blog />
-        <ReachMap />
+        <div className="bg-white dark:bg-darkgray">
+          <Blog />
+          <ReachMap />
+        </div>
         <About />
         <Contact />
       </main>
